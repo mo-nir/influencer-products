@@ -1,0 +1,112 @@
+/* font-family: 'Inter',
+sans-serif;
+font-family: 'Manrope',
+sans-serif; */
+
+
+/* ----------------------
+    basic / common CSS 
+-------------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #fff;
+    color: #000;
+}
+
+header,
+main,
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    /* padding-top: 80px; */
+}
+
+.container {
+    width: 1200px;
+    max-width: 100%;
+    padding: 40px 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #e02c6d;
+    padding: 10px 15px;
+}
+
+.round {
+    border-radius: 25px;
+}
+
+.button .iconify {
+    color: #fff;
+    margin-left: 15px;
+}
+
+/*-------------------------- 
+        header area 
+--------------------------*/
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+header h3,
+header a {
+    color: #3A3A3A;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    padding: 5px 10px;
+}
+
+.iconify {
+    color: #000;
+}
+
+/*---------------------
+     top area 
+----------------------*/
+.top-area-container {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+}
