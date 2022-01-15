@@ -173,7 +173,13 @@ nav li {
     align-items: center;
 }
 
+.top-area-image img {
+    transition: transform 1s ease;
+}
 
+.top-area-image:hover>img {
+    transform: scale(1.2);
+}
 
 
 /* --------------------------
