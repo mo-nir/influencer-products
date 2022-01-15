@@ -167,6 +167,14 @@ nav li {
     max-width: 196px;
 }
 
+.top-area-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 
 /* --------------------------
     popular collection area
@@ -277,13 +285,6 @@ footer .social-icons .iconify {
 ------------------*/
 /* mobile devices */
 @media only screen and (max-width:988px) {
-    header .container {
-        justify-content: center;
-    }
-
-    nav {
-        display: none;
-    }
 
     .collections {
         grid-template-columns: repeat(2, 1fr);
@@ -291,6 +292,13 @@ footer .social-icons .iconify {
 }
 
 @media only screen and (max-width:767px) {
+    header .container {
+        justify-content: center;
+    }
+
+    nav {
+        display: none;
+    }
 
     .top-area-container,
     .collections {
