@@ -33,9 +33,9 @@ section {
 }
 
 .container {
-    width: 1200px;
-    max-width: 100%;
-    padding: 40px 0;
+    width: 100%;
+    max-width: 1200px;
+    padding: 50px 2%;
 }
 
 h1,
@@ -144,12 +144,13 @@ nav li {
     color: #000;
 }
 
+
 /*---------------------
      top area 
 ----------------------*/
 .top-area-container {
     display: grid;
-    grid-template-columns: 1fr 400px;
+    grid-template-columns: 2fr 1fr;
 }
 
 .top-area-text {
@@ -165,6 +166,7 @@ nav li {
 .top-area-text .button {
     max-width: 196px;
 }
+
 
 /* --------------------------
     popular collection area
@@ -182,7 +184,7 @@ nav li {
 }
 
 .collection-thumb img {
-    width: 100%;
+    width: 100%
 }
 
 .collection-info h3 {
@@ -225,6 +227,7 @@ nav li {
     color: #787885;
 }
 
+
 /* ------------------
     footer area 
 --------------------*/
@@ -265,4 +268,59 @@ footer .social-icons a:last-child {
 
 footer .social-icons .iconify {
     color: #fff;
+}
+
+
+
+/*------------------
+   media queries
+------------------*/
+/* mobile devices */
+@media only screen and (max-width:988px) {
+    header .container {
+        justify-content: center;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .collections {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width:767px) {
+
+    .top-area-container,
+    .collections {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .top-area-text {
+        align-items: center;
+        order: 2;
+
+    }
+
+    .top-area-text h1 {
+        font-size: 28px;
+    }
+
+    .top-area-text h1,
+    .top-area-text p {
+        text-align: center;
+    }
+
+    .top-area-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        order: 1;
+        margin-bottom: 30px;
+    }
+
+    .top-area-image img {
+        width: 202px;
+    }
 }
