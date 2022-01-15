@@ -110,3 +110,17 @@ nav li {
     display: grid;
     grid-template-columns: 1fr 400px;
 }
+
+.top-area-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top-area-text p {
+    margin: 25px 0;
+}
+
+.top-area-text .button {
+    max-width: 196px;
+}
